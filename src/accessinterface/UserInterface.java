@@ -71,33 +71,34 @@ public class UserInterface extends JFrame {
 		 * abas/(tabbedPanes) do programa
 		 **/
 		
-		tabbedPane.addTab("Login do Usu·rio", null, login.getUserPage(), BorderLayout.CENTER);
-		tabbedPane.addTab("Cadastro de Usu·rios", null, user.getUserRegistration(), BorderLayout.CENTER);
+		tabbedPane.addTab("Login do Usu√°rio", null, login.getUserPage(), BorderLayout.CENTER);
+		tabbedPane.addTab("Cadastro de Usu√°rios", null, user.getUserRegistration(), BorderLayout.CENTER);
 		tabbedPane.addTab("Cadastro de Clientes", null, client.getClientRegister(), BorderLayout.CENTER);
 		tabbedPane.addTab("Controle de CAIXA", null, cash.getCashRegister(), BorderLayout.CENTER);
 		tabbedPane.addTab("Cadastro de Produtos", null, product.getProductRegistration(), BorderLayout.CENTER);
 		tabbedPane.addTab("Controle de Estoque", null, stock.getControl(), BorderLayout.CENTER);
 		
 		/**
-		 * O bloco abaixo desabilita todas as abas do programa mantendo somente a aba 'Login do Usu·rio' aberta/visÌvel		
+		 * O bloco abaixo desabilita todas as abas do programa mantendo somente a aba 'Login do Usu√°rio' aberta/vis√≠vel		
 		 **/
 		tabbedPane.setEnabledAt(1, false); 
 		tabbedPane.setEnabledAt(2, false);
 		tabbedPane.setEnabledAt(3, false);
 		tabbedPane.setEnabledAt(4, false);
 		tabbedPane.setEnabledAt(5, false);
-
-		//Este bloco de teste (abaixo) dever· ser apagado apÛs a finalizaÁ„o do projeto pois ele habilita todas as abas
+                /**
+		//Este bloco de teste (abaixo) dever√° ser apagado ap√≥s a finaliza√ß√£o do projeto pois ele habilita todas as abas
 		tabbedPane.setEnabledAt(1, true);
 		tabbedPane.setEnabledAt(2, true);
 		tabbedPane.setEnabledAt(3, true);
 		tabbedPane.setEnabledAt(4, true);
 		tabbedPane.setEnabledAt(5, true);
+                **/
 	}
 	
 	/**
-	 *Todas as abas possuem um bot„o SAIR que ir· executar esta funÁ„o trazendo o usu·rio para a P·gina de Login mantendo todas as demais abas bloqueadas
-	 *Ao terminar de usar o programa o usu·rio poder· sair do sistema deixando o mesmo bloqueado na P·gina de Login uma vez que cada usu·rio possui privilÈgios diferenciados
+	 *Todas as abas possuem um bot√£o SAIR que ir√° executar esta fun√ß√£o trazendo o usu√°rio para a P√°gina de Login mantendo todas as demais abas bloqueadas
+	 *Ao terminar de usar o programa o usu√°rio poder√° sair do sistema deixando o mesmo bloqueado na P√°gina de Login uma vez que cada usu√°rio possui privil√©gios diferenciados
 	 **/
 	public static void InitialScreen() {
 		tabbedPane.setSelectedIndex(0);
