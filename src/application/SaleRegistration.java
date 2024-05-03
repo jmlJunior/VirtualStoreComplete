@@ -31,7 +31,7 @@ public class SaleRegistration extends CashRegister {
 		String init = "00001";
 		int year = LocalDate.now().getYear()-2000;
 		int month = LocalDate.now().getMonthValue();
-		String saleIds = String.valueOf(year) + String.valueOf(month) + init;
+		String saleIds = String.valueOf(year) + String.valueOf(month<10?("0"+month):(month)) + init;
 		
 		try {
 			conn = DB.getConnection();
@@ -79,7 +79,7 @@ public class SaleRegistration extends CashRegister {
 					"SELECT name, description, qtde, price FROM products WHERE code = '" + productCodeNumber + "';");
 
 			if (!rs.next()) {
-				JOptionPane.showMessageDialog(null, "DESCULPE!!! Produto não Cadastrado!");
+				JOptionPane.showMessageDialog(null, "DESCULPE!!! Produto nÃ£o Cadastrado!");
 			} else {
 				
 				do {
@@ -124,7 +124,7 @@ public class SaleRegistration extends CashRegister {
 			while (rs.next()) {
 
 				if (storage < quantitySelected) {
-					JOptionPane.showMessageDialog(null, "ATENÇÃO! Quantidade solicitada NÃO DISPONÍVEL no estoque!");
+					JOptionPane.showMessageDialog(null, "ATENÃ‡ÃƒO! Quantidade solicitada NÃƒO DISPONÃVEL no estoque!");
 				}
 				if (quantitySelected != null && storage >= quantitySelected) {
 					String quantity = String.valueOf(rs.getInt(3));
