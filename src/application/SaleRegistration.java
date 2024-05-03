@@ -31,7 +31,7 @@ public class SaleRegistration extends CashRegister {
 		String init = "00001";
 		int year = LocalDate.now().getYear()-2000;
 		int month = LocalDate.now().getMonthValue();
-		String saleIds = String.valueOf(year) + String.valueOf(month<10?("0"+month):(month)) + init;
+		String saleIds = String.valueOf(year) + String.valueOf(month<10?("0" + month):(month)) + init;
 		
 		try {
 			conn = DB.getConnection();
