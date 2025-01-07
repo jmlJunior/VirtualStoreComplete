@@ -95,7 +95,7 @@ public class StockControl extends JPanel {
 		out.setBounds(1015, 802, 122, 41);
 		control.add(out);
 		
-		JLabel idNumber = new JLabel("C\u00F3digo do Produto:");
+		JLabel idNumber = new JLabel("Código do Produto:");
 		idNumber.setForeground(new Color(153, 0, 51));
 		idNumber.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		idNumber.setBounds(178, 212, 234, 40);
@@ -124,7 +124,7 @@ public class StockControl extends JPanel {
 		productDesc.setBounds(609, 352, 528, 123);
 		control.add(productDesc);
 		
-		JLabel lblDescr = new JLabel("Descri\u00E7\u00E3o:");
+		JLabel lblDescr = new JLabel("Descrição:");
 		lblDescr.setForeground(new Color(153, 0, 51));
 		lblDescr.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		lblDescr.setBounds(609, 308, 528, 40);
@@ -142,7 +142,7 @@ public class StockControl extends JPanel {
 		stockQty.setBounds(489, 441, 96, 34);
 		control.add(stockQty);
 		
-		JLabel lblPreoDaUnidade = new JLabel("Pre\u00E7o da Unidade:");
+		JLabel lblPreoDaUnidade = new JLabel("Preço da Unidade:");
 		lblPreoDaUnidade.setForeground(new Color(153, 0, 51));
 		lblPreoDaUnidade.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		lblPreoDaUnidade.setBounds(178, 397, 220, 40);
@@ -159,7 +159,7 @@ public class StockControl extends JPanel {
 				
 				Object[] options = { "OK", "CANCELAR" };				
 				var selection = JOptionPane.showOptionDialog(null,"Tem certeza que dezeja EXCLUIR o Catasdro deste Produto?",
-						                                          "ATEN��O!!!", 
+						                                          "ATENÇÃO!!!", 
 						                                          JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE,
 						                                          null, 
 						                                          options, 
@@ -173,7 +173,7 @@ public class StockControl extends JPanel {
 					stockQty.setText("");
 					productDesc.setText("");
 					
-					JOptionPane.showMessageDialog(null, "Produto EXCU�DO com SUSSE�O!!!");
+					JOptionPane.showMessageDialog(null, "Produto EXCU�DO com SUSSE�O!!!");
 				}
 			}
 		});
@@ -271,7 +271,7 @@ public class StockControl extends JPanel {
 				stockQty.setText("");
 				productDesc.setText("");
 				
-				JOptionPane.showMessageDialog(null, "Produto ATUALIZADO com �XITO!!!");
+				JOptionPane.showMessageDialog(null, "Produto ATUALIZADO com ÊXITO!!!");
 			}
 		});
 		actualizer.setForeground(new Color(0, 100, 0));
@@ -303,7 +303,7 @@ public class StockControl extends JPanel {
 		checkNameAct.setBounds(178, 794, 183, 23);
 		control.add(checkNameAct);
 		
-		checkPriceAct = new JCheckBox("ATUALIZAR PRE\u00C7O");
+		checkPriceAct = new JCheckBox("ATUALIZAR PREÇO");
 		checkPriceAct.setFont(new Font("Tahoma", Font.BOLD, 14));
 		checkPriceAct.setBackground(Color.LIGHT_GRAY);
 		checkPriceAct.setBounds(178, 820, 183, 23);
@@ -315,7 +315,7 @@ public class StockControl extends JPanel {
 		checkStockAct.setBounds(364, 820, 221, 23);
 		control.add(checkStockAct);
 		
-		checkDescAct = new JCheckBox("ATUALIZAR DESCRI\u00C7\u00C3O");
+		checkDescAct = new JCheckBox("ATUALIZAR DESCRIÇÃO");
 		checkDescAct.setFont(new Font("Tahoma", Font.BOLD, 14));
 		checkDescAct.setBackground(Color.LIGHT_GRAY);
 		checkDescAct.setBounds(364, 794, 221, 23);

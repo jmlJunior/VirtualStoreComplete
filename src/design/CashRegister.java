@@ -63,7 +63,7 @@ public class CashRegister extends JFrame {
 		subTitle.setBounds(0, 150, 1250, 85);
 		cashRegister.add(subTitle);
 
-		saleId = new JLabel("C\u00F3digo da Venda:");
+		saleId = new JLabel("Código da Venda:");
 		saleId.setForeground(new Color(153, 0, 51));
 		saleId.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 32));
 		saleId.setBounds(114, 272, 192, 40);
@@ -74,7 +74,7 @@ public class CashRegister extends JFrame {
 		insertSaleId.setBounds(114, 312, 182, 34);
 		cashRegister.add(insertSaleId);
 
-		clientId = new JLabel("C\u00F3digo do Cliente:");
+		clientId = new JLabel("Código do Cliente:");
 		clientId.setForeground(new Color(153, 0, 51));
 		clientId.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 32));
 		clientId.setBounds(328, 272, 192, 40);
@@ -96,7 +96,7 @@ public class CashRegister extends JFrame {
 		insertClientName.setBounds(545, 312, 592, 34);
 		cashRegister.add(insertClientName);
 
-		idNumber = new JLabel("C\u00F3d. do Produto:");
+		idNumber = new JLabel("Cód. do Produto:");
 		idNumber.setForeground(new Color(153, 0, 51));
 		idNumber.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 32));
 		idNumber.setBounds(114, 368, 224, 40);
@@ -118,7 +118,7 @@ public class CashRegister extends JFrame {
 		productName.setBounds(328, 408, 187, 34);
 		cashRegister.add(productName);
 
-		description = new JLabel("Descri\u00E7\u00E3o do Produto:");
+		description = new JLabel("Descriçãoo do Produto:");
 		description.setForeground(new Color(153, 0, 51));
 		description.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 32));
 		description.setBounds(545, 368, 273, 40);
@@ -159,7 +159,7 @@ public class CashRegister extends JFrame {
 		productQuantity.setBounds(244, 534, 52, 34);
 		cashRegister.add(productQuantity);
 
-		price = new JLabel("Valor Unit\u00E1rio:");
+		price = new JLabel("Valor Unitário:");
 		price.setBackground(Color.WHITE);
 		price.setHorizontalAlignment(SwingConstants.LEFT);
 		price.setForeground(new Color(153, 0, 51));
@@ -206,7 +206,7 @@ public class CashRegister extends JFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"C\u00F3digo", "Produto", "Descri\u00E7\u00E3o/Detalhe", "Qtde", "Valor Unit\u00E1rio"
+				"Código", "Produto", "Descrição/Detalhe", "Qtde", "Valor Unitário"
 			}
 		));
 		table.getColumnModel().getColumn(2).setPreferredWidth(348);

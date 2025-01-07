@@ -46,7 +46,7 @@ public class UserRegisterPanel extends JPanel {
 		userRegistration.setLayout(null);
 		userRegistration.add(title);
 		
-		subTitle = new JLabel("CADASTRO DE USU�RIOS:");
+		subTitle = new JLabel("CADASTRO DE USUÁRIOS:");
 		subTitle.setForeground(new Color(153, 0, 51));
 		subTitle.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 50));
 		subTitle.setBounds(117, 151, 786, 41);
@@ -63,7 +63,7 @@ public class UserRegisterPanel extends JPanel {
 		insertName.setBounds(117, 275, 461, 34);
 		userRegistration.add(insertName);
 		
-		idNumber = new JLabel("N\u00BA de Cadastro:");
+		idNumber = new JLabel("Nº de Cadastro:");
 		idNumber.setForeground(new Color(153, 0, 51));
 		idNumber.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		idNumber.setBounds(917, 233, 220, 40);
@@ -198,13 +198,13 @@ public class UserRegisterPanel extends JPanel {
 		remove.setBounds(715, 802, 145, 41);
 		userRegistration.add(remove);
 		
-		lblConsultarRemover = new JLabel("CONSULTAR / REMOVER USU\u00C1RIOS:");
+		lblConsultarRemover = new JLabel("CONSULTAR / REMOVER USUÁRIOS:");
 		lblConsultarRemover.setForeground(new Color(153, 0, 51));
 		lblConsultarRemover.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 50));
 		lblConsultarRemover.setBounds(117, 580, 786, 41);
 		userRegistration.add(lblConsultarRemover);
 		
-		idCheck = new JLabel("N\u00BA de Cadastro:");
+		idCheck = new JLabel("Nº de Cadastro:");
 		idCheck.setForeground(new Color(153, 0, 51));
 		idCheck.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		idCheck.setBounds(117, 658, 220, 40);

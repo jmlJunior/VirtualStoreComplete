@@ -38,7 +38,7 @@ public class UserLogin extends LoginPanel {
 			rs = st.executeQuery("select * from users where nickname = '" + name + "';");
 
 			if (!rs.next()) {
-				JOptionPane.showMessageDialog(null, "Ops! USU¡RIO N√O CADASTRADO... TENTE NOVAMENTE!");
+				JOptionPane.showMessageDialog(null, "Ops! USU√ÅRIO N√ÉO CADASTRADO... TENTE NOVAMENTE!");
 			} else {
 
 				do {
@@ -47,7 +47,7 @@ public class UserLogin extends LoginPanel {
 					String checkPosition = rs.getString("position");
 
 					if (!password.equals(checkPassword)) {
-						JOptionPane.showMessageDialog(null, "Ops! SENHA INV¡LIDA... TENTE NOVAMENTE!");
+						JOptionPane.showMessageDialog(null, "Ops! SENHA INVÔøΩLIDA... TENTE NOVAMENTE!");
 					}
 
 					if (password.equals(checkPassword) && checkPosition.equals("Gerente")) {

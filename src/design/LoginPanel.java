@@ -42,7 +42,7 @@ public class LoginPanel extends JPanel {
 		userPage.setLayout(null);
 		userPage.add(title);
 		
-		subTitle = new JLabel("LOGIN DE USU\u00C1RIO:");
+		subTitle = new JLabel("LOGIN DE USUÁRIO:");
 		subTitle.setForeground(new Color(153, 0, 51));
 		subTitle.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 50));
 		subTitle.setBounds(178, 150, 316, 41);

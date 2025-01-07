@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import javax.swing.JOptionPane;
+
 import database.DB;
 import database.DbIntegrityException;
 import design.ClientRegisterPanel;
@@ -36,7 +38,7 @@ public class ClientUpdate extends ClientRegisterPanel {
 				st.setInt(2, clientCode);
 				st.executeUpdate();
 				DB.closeStatement(st);
-			}
+			} else
 			
 			if (ClientRegisterPanel.adressAct.isSelected()) {
 				st = conn.prepareStatement("UPDATE client " + "SET number = ? " + "WHERE " + "code = ?");
@@ -44,7 +46,7 @@ public class ClientUpdate extends ClientRegisterPanel {
 				st.setInt(2, clientCode);
 				st.executeUpdate();
 				DB.closeStatement(st);
-			}
+			} else
 
 			if (ClientRegisterPanel.complementAct.isSelected()) {
 				st = conn.prepareStatement("UPDATE client " + "SET complement = ? " + "WHERE " + "code = ?");
@@ -52,7 +54,7 @@ public class ClientUpdate extends ClientRegisterPanel {
 				st.setInt(2, clientCode);
 				st.executeUpdate();
 				DB.closeStatement(st);
-			}
+			} else
 
 			if (ClientRegisterPanel.phoneNumberAct.isSelected()) {
 				st = conn.prepareStatement("UPDATE client " + "SET phone = ? " + "WHERE " + "code = ?");
@@ -60,7 +62,7 @@ public class ClientUpdate extends ClientRegisterPanel {
 				st.setInt(2, clientCode);
 				st.executeUpdate();
 				DB.closeStatement(st);
-			}
+			} else
 			
 			if (ClientRegisterPanel.emailAct.isSelected()) {
 				st = conn.prepareStatement("UPDATE client " + "SET mail = ? " + "WHERE " + "code = ?");
@@ -68,6 +70,18 @@ public class ClientUpdate extends ClientRegisterPanel {
 				st.setInt(2, clientCode);
 				st.executeUpdate();
 				DB.closeStatement(st);
+			} else {
+				JOptionPane.showMessageDialog(null, "É necessário selecionar ao menos 1 (um) item para atualizar!");
+			}
+			
+			if (   ClientRegisterPanel.adressAct.isSelected()
+				|| ClientRegisterPanel.complementAct.isSelected()
+				|| ClientRegisterPanel.phoneNumberAct.isSelected()
+				|| ClientRegisterPanel.emailAct.isSelected()
+				) {
+				JOptionPane.showMessageDialog(null, "Dados atualizados com SUSSEÇO!!!");
+			} else {
+				JOptionPane.showMessageDialog(null, "Não foi selecionado nenhum dado para ser atualizado");
 			}
 
 		}

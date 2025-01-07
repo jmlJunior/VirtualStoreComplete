@@ -43,7 +43,7 @@ public class ProductRegistration extends ProductRegisterPanel {
 			    st.setDouble(5, priceValue);
 			    
 			    st.executeUpdate();
-			    JOptionPane.showMessageDialog(null, "Produto cadastrado com SUSSEÇO!!!");
+			    JOptionPane.showMessageDialog(null, "Produto cadastrado com SUSSEÃ‡O!!!");
 		    }
 			
 			catch (SQLException e) {

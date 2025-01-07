@@ -8,7 +8,7 @@ public class DbException extends RuntimeException {
 	
 	public DbException(String msg) {
 		super(msg);
-		JOptionPane.showMessageDialog(null, "DESCULPE!!! N√O FOI POSSÕVEL ACESSAR A BASE DE DADOS...");
+		JOptionPane.showMessageDialog(null, "DESCULPE!!! N√ÉO FOI POSS√çVEL ACESSAR A BASE DE DADOS...");
 	}
 
 }

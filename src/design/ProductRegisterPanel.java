@@ -51,7 +51,7 @@ public class ProductRegisterPanel extends JPanel {
 		subTitle.setBounds(178, 150, 786, 41);
 		productRegistration.add(subTitle);
 		
-		idNumber = new JLabel("C\u00F3digo do Produto:");
+		idNumber = new JLabel("Código do Produto:");
 		idNumber.setForeground(new Color(153, 0, 51));
 		idNumber.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		idNumber.setBounds(178, 242, 234, 40);
@@ -73,7 +73,7 @@ public class ProductRegisterPanel extends JPanel {
 		insertProdName.setBounds(178, 420, 461, 34);
 		productRegistration.add(insertProdName);
 		
-		lblDescr = new JLabel("Descri\u00E7\u00E3o:");
+		lblDescr = new JLabel("Descrição:");
 		lblDescr.setForeground(new Color(153, 0, 51));
 		lblDescr.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		lblDescr.setBounds(178, 477, 213, 40);
@@ -97,7 +97,7 @@ public class ProductRegisterPanel extends JPanel {
 		insertQtde.setBounds(178, 698, 162, 34);
 		productRegistration.add(insertQtde);
 		
-		lblPreoDaUnidade = new JLabel("Pre\u00E7o da Unidade:");
+		lblPreoDaUnidade = new JLabel("Preço da Unidade:");
 		lblPreoDaUnidade.setForeground(new Color(153, 0, 51));
 		lblPreoDaUnidade.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		lblPreoDaUnidade.setBounds(419, 654, 220, 40);

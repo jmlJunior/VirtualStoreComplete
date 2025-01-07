@@ -34,7 +34,7 @@ public class ProductUpdate extends StockControl {
 					"SELECT name, description, qtde, price FROM products WHERE code = '" + productCodeNumber + "';");
 
 			if (!rs.next()) {
-				JOptionPane.showMessageDialog(null, "DESCULPE!!! Produto n„o Cadastrado!");
+				JOptionPane.showMessageDialog(null, "DESCULPE!!! Produto n√£o Cadastrado!");
 			} else {
 
 				do {

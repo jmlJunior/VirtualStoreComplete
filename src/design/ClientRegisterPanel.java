@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
@@ -83,7 +83,7 @@ public class ClientRegisterPanel extends JPanel {
 		insertDocNumber.setBounds(396, 275, 220, 34);
 		clientRegister.add(insertDocNumber);
 		
-		clienteCode = new JLabel("Código do Cliente:");
+		clienteCode = new JLabel("CÃ³digo do Cliente:");
 		clienteCode.setForeground(new Color(153, 0, 51));
 		clienteCode.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		clienteCode.setBounds(117, 233, 220, 40);
@@ -94,7 +94,7 @@ public class ClientRegisterPanel extends JPanel {
 		insertClientCode.setBounds(117, 275, 220, 34);
 		clientRegister.add(insertClientCode);
 		
-		position = new JLabel("Endere\u00E7o (Rua/P\u00E7/Av:)");
+		position = new JLabel("EndereÃ§o (Rua/PÃ§/Av:)");
 		position.setForeground(new Color(153, 0, 51));
 		position.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		position.setBounds(117, 328, 461, 40);
@@ -105,7 +105,7 @@ public class ClientRegisterPanel extends JPanel {
 		insertPosition.setBounds(117, 372, 743, 34);
 		clientRegister.add(insertPosition);
 		
-		houseNumber = new JLabel("Número:");
+		houseNumber = new JLabel("NÃºmero:");
 		houseNumber.setForeground(new Color(153, 0, 51));
 		houseNumber.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 36));
 		houseNumber.setBounds(917, 328, 220, 41);
@@ -143,13 +143,13 @@ public class ClientRegisterPanel extends JPanel {
 			new Object[][] {
 			},
 			new String[] {
-				"Código", "Nome", "Documento", "Endereço", "Telefone"
+				"CÃ³digo", "Nome", "Documento", "EndereÃ§o", "Telefone"
 			}
 		));
 		
-		table.getColumnModel().getColumn(0).setPreferredWidth(20);
-		table.getColumnModel().getColumn(1).setPreferredWidth(200);
-		table.getColumnModel().getColumn(2).setPreferredWidth(40);
+		table.getColumnModel().getColumn(0).setPreferredWidth(55);
+		table.getColumnModel().getColumn(1).setPreferredWidth(230);
+		table.getColumnModel().getColumn(2).setPreferredWidth(50);
 		table.getColumnModel().getColumn(3).setPreferredWidth(300);			
 		
 		scroll = new JScrollPane();
@@ -231,7 +231,6 @@ public class ClientRegisterPanel extends JPanel {
 		actualizer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ClientUpdate.clientUpdate();
-				JOptionPane.showMessageDialog(null, "Dados atualizados com SUSSEÇO!!!");
 			}
 		});
 		actualizer.setFont(new Font("Bodoni MT Condensed", Font.BOLD, 30));
@@ -262,7 +261,7 @@ public class ClientRegisterPanel extends JPanel {
 		mail.setBounds(117, 575, 565, 34);
 		clientRegister.add(mail);
 
-		adressAct = new JCheckBox("ATUALIZAR ENDERE\u00C7O / N\u00BA");
+		adressAct = new JCheckBox("ATUALIZAR ENDEREÃ‡O / NÂº");
 		adressAct.setFont(new Font("Tahoma", Font.BOLD, 14));
 		adressAct.setBackground(Color.LIGHT_GRAY);
 		adressAct.setBounds(117, 850, 238, 23);

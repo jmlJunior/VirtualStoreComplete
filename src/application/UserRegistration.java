@@ -47,12 +47,12 @@ public class UserRegistration extends UserRegisterPanel {
 			    st.setString(5, password);
 			    
 			    st.executeUpdate();
-			    JOptionPane.showMessageDialog(null, "Usu·rio cadastrado com SUSSE«O!!!");
+			    JOptionPane.showMessageDialog(null, "UsuÔøΩrio cadastrado com SUSSE√áO!!!");
 		    }
 			
 			catch (SQLException e) {
 				e.printStackTrace();
-				JOptionPane.showMessageDialog(null, "ERRO ao tentar cadastrar novo usu·rio!!!");
+				JOptionPane.showMessageDialog(null, "ERRO ao tentar cadastrar novo usu√°rio!!!");
 			}
 			
 			finally {
@@ -109,7 +109,7 @@ public class UserRegistration extends UserRegisterPanel {
 		    st.setInt(1, idConsult);
 		    st.executeUpdate();		    
 		    
-		    JOptionPane.showMessageDialog(null, "Usu·rio EXCUÕDO com SUSSE«O!!!");
+		    JOptionPane.showMessageDialog(null, "Usu√°rio EXCU√çDO com SUSSE√áO!!!");
 		    
 		    }
 		    catch (SQLException e) {

@@ -91,7 +91,7 @@ public class ClientRegister extends ClientRegisterPanel {
 			st.setString(8, mail);
 
 			st.executeUpdate();
-			JOptionPane.showMessageDialog(null, "Cliente cadastrado com SUSSEÇO!!!");
+			JOptionPane.showMessageDialog(null, "Cliente cadastrado com SUSSEÃ‡O!!!");
 		}
 
 		catch (SQLException e) {
